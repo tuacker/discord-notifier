@@ -1,6 +1,6 @@
-# DiscordNotifier
+# Discord Notifier
 
-A notifier to send messages to a discord webhook with retry mechanism.
+A notifier to send messages to a discord webhook with a primitive retry mechanism.
 
 ## Installation
 
@@ -14,18 +14,20 @@ def deps do
 end
 ```
 
-# Config
+## Config
 
-1. In the Discord client, go to the server and open the settings of a text channel.
+### Production
+1. In the Discord client, go to the server and open the settings of a `text channel`.
 2. Go to Webhooks and create a new hook
-3. Copy the entire webhook url into the config as shown below
+3. Copy the entire `webhook url` into the config as shown below
 
 ```elixir
 config :discord_notifier,
   webhook: "https://discordapp.com/api/webhooks/{your_channel_id}/{your_channel_token}"
 ```
 
-For testing set `testing` to `true` and the notifier will output messages to the `Logger`.
+### Testing
+Set `testing` to `true` and the notifier will output messages to the `Logger`.
 
 ```elixir
 config :discord_notifier, testing: true
