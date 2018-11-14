@@ -8,8 +8,7 @@ defmodule DiscordNotifier.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: DiscordNotifier.Worker.start_link(arg)
-      # {DiscordNotifier.Worker, arg},
+      {DiscordNotifier, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
