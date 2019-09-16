@@ -9,7 +9,7 @@ Currently not published to hex. Add dependency from this repository instead.
 ```elixir
 def deps do
   [
-    {:discord_notifier, "~> 1.0", git: "https://gitlab.com/tuacker/discord-notifier.git"}
+    {:discord_notifier, "~> 1.0", git: "https://github.com/tuacker/discord-notifier.git"}
   ]
 end
 ```
